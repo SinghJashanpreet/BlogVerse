@@ -10,6 +10,8 @@ const categoryRoute = require("./routes/categories");
 const multer = require("multer");
 const path = require("path");
 
+//https://blogverse-iy7h.onrender.com/
+
 dotenv.config();
 
 app.use(
