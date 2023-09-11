@@ -26,6 +26,7 @@ app.use("/images", express.static(path.join(__dirname, "/images")));
 
 mongoose
   // .connect('mongodb://127.0.0.1:27017/NewSchema', {
+    //this is forlocal
   .connect(`mongodb+srv://jashanpreet6081:J@shanjo0@blogverse.uevgveg.mongodb.net/?retryWrites=true&w=majority`, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
