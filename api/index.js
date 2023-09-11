@@ -11,12 +11,13 @@ const multer = require("multer");
 const path = require("path");
 
 //https://blogverse-iy7h.onrender.com/
-
+//jashanpreet6081 username 
+//and passw samedd
 dotenv.config();
 
 app.use(
   cors({
-    origin: "http://localhost:3000/",
+    origin: "https://singhsblogverse.netlify.app/",
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   })
 );
@@ -24,7 +25,8 @@ app.use(express.json());
 app.use("/images", express.static(path.join(__dirname, "/images")));
 
 mongoose
-  .connect('mongodb://127.0.0.1:27017/NewSchema', {
+  // .connect('mongodb://127.0.0.1:27017/NewSchema', {
+  .connect(`mongodb+srv://jashanpreet6081:J@shanjo0@blogverse.uevgveg.mongodb.net/?retryWrites=true&w=majority`, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
