@@ -5,7 +5,7 @@ import "./topbar.css";
 
 export default function TopBar() {
   const { user, dispatch } = useContext(Context);
-  const PF = "https://blogverse-iy7h.onrender.com/images/"
+  const PF = "http://localhost:5000/images/";
 
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });
@@ -26,15 +26,26 @@ export default function TopBar() {
             </Link>
           </li>
           <li className="topListItem">
-            <Link className="link" to="/">
+            <a
+              className="link"
+              href="https://singhjashanpreet.github.io/Portfollio/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               ABOUT
-            </Link>
+            </a>
           </li>
           <li className="topListItem">
-            <Link className="link" to="/">
+            <a
+              className="link"
+              href="https://singhjashanpreet.github.io/Portfollio/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               CONTACT
-            </Link>
+            </a>
           </li>
+
           <li className="topListItem">
             <Link className="link" to="/write">
               WRITE
@@ -48,7 +59,7 @@ export default function TopBar() {
       <div className="topRight">
         {user ? (
           <Link to="/settings">
-            <img className="topImg" src={PF+user.profilePic} alt="" />
+            <img className="topImg" src={PF + user.profilePic} alt="" />
           </Link>
         ) : (
           <ul className="topList">

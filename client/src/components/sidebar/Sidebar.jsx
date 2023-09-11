@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import img from '../../images/Formal JASHANPREET SINGH.jpg'
 import "./sidebar.css";
 
 export default function Sidebar() {
@@ -18,12 +19,13 @@ export default function Sidebar() {
       <div className="sidebarItem">
         <span className="sidebarTitle">ABOUT ME</span>
         <img
-          src="https://i.pinimg.com/236x/1e/3f/58/1e3f587572a7a7b20bbf1828595a1786--holiday-party-themes-holiday-gift-guide.jpg"
+          src={img}
           alt=""
+          width="85%"
         />
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate qui
-          necessitatibus nostrum illum reprehenderit.
+        <span style={{ fontWeight: 'bold' }}>Jashanpreet Singh:-</span><br/>
+          A Full Stack Web Developer.
         </p>
       </div>
       <div className="sidebarItem">
