@@ -12,7 +12,11 @@ export default function Settings() {
   const [success, setSuccess] = useState(false);
 
   const { user, dispatch } = useContext(Context);
+<<<<<<< HEAD
   const PF = "http://localhost:5000/images/"
+=======
+  const PF = "http://https://blogverse-iy7h.onrender.com/images/"
+>>>>>>> master
 
   const handleSubmit = async (e) => {
     e.preventDefault();

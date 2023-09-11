@@ -20,7 +20,10 @@ export default function Register() {
       });
       res.data && window.location.replace("/login");
     } catch (err) {
+<<<<<<< HEAD
       console.log(err)
+=======
+>>>>>>> master
       setError(true);
     }
   };
