@@ -5,7 +5,7 @@ import "./topbar.css";
 
 export default function TopBar() {
   const { user, dispatch } = useContext(Context);
-  const PF = "http://https://blogverse-iy7h.onrender.com/images/"
+  const PF = "https://blogverse-iy7h.onrender.com/images/"
 
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });
